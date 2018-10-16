@@ -34,7 +34,7 @@ td {
 	<b><font size="6" color="gray">회원가입</font></b>
 	<br><br><br>
 	
-	<form>
+	<form method="post" action="<%=request.getContextPath() %>/pro/JoinPro.jsp">
             <table>
                 <tr>
                     <td id="title">아이디</td>
@@ -45,11 +45,11 @@ td {
                 </tr>
                 <tr>
                     <td id="title">비밀번호</td>
-                    <td><input type="password" name="passwd" maxlength="15"></td>
+                    <td><input type="password" name="password" maxlength="15"></td>
                 </tr>
                 <tr>
                     <td id="title">비밀번호 확인</td>
-                    <td><input type="password" name="passwd" maxlength="15"></td>
+                    <td><input type="password" name="password" maxlength="15"></td>
                 </tr>
                 <tr>
                     <td id="title">이름</td>
@@ -81,7 +81,7 @@ td {
                     		<option value="11">11</option>
                     		<option value="12">12</option>
                     	</select>
-                    	<input type="text" name="brith_dd" maxlength="2" placeholder="일" size="4">
+                    	<input type="text" name="birth_dd" maxlength="2" placeholder="일" size="4">
                     </td>
                 </tr>
                 <tr>
