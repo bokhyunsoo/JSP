@@ -65,8 +65,8 @@ td {
                 <tr>
                     <td id="title">생일</td>
                     <td>
-                    	<input type="text" name="birth_yy" maxlength="4" placeholder="년(4자)" size="6" />
-                    	<select name="birth_mm">
+                    	<input type="text" name="birthyy" maxlength="4" placeholder="년(4자)" size="6" />
+                    	<select name="birthmm">
                     		<option value="">월</option>
                     		<option value="01">1</option>
                     		<option value="02">2</option>
@@ -81,13 +81,13 @@ td {
                     		<option value="11">11</option>
                     		<option value="12">12</option>
                     	</select>
-                    	<input type="text" name="birth_dd" maxlength="2" placeholder="일" size="4">
+                    	<input type="text" name="birthdd" maxlength="2" placeholder="일" size="4">
                     </td>
                 </tr>
                 <tr>
                     <td id="title">이메일</td>
-                    <td><input type="text" name="email_1" maxlength="30">@
-                    	<select name="email_2">
+                    <td><input type="text" name="mail1" maxlength="30">@
+                    	<select name="mail2">
                     		<option>naver.com</option>
                     		<option>daum.net</option>
                     		<option>gmail.com</option>
