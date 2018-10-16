@@ -5,27 +5,26 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>회원가입 화면</title>
-
-<style>
-#wrap{
-	width:530px;
-	margin-left:auto;
-	margin-right:auto;
-	text-align:center;
-}
-
-table {
-	border:3px solid skyblue
-}
-
-td {
-	border:1px solid skyblue
-}
-
-#title {
-	background-color:skyblue
-}
-</style>
+<!-- css 파일 분리 -->
+<link href='<%=request.getContextPath() %>/css/join_style.css' rel='stylesheet' style='text/css'/>
+<script>
+	function checkValue(){
+		if(!document.userInfo.id.value){
+			alert("아이디를 입력하세요.");
+			return false;
+		}
+		
+		if(!document.userInfo.password.value){
+			alert("비밀번호를 입력하세요.");
+			return false;
+		}
+		
+		if(document.userInfo.password.value != document.userInfo.passwordcheck.value){
+			alert("비밀번호를 동일하게 입력하세요.");
+			return false;
+		}
+	}	
+</script>
 </head>
 <body>
 
@@ -34,7 +33,7 @@ td {
 	<b><font size="6" color="gray">회원가입</font></b>
 	<br><br><br>
 	
-	<form method="post" action="<%=request.getContextPath() %>/pro/JoinPro.jsp">
+	<form method="post" action="<%=request.getContextPath() %>/pro/JoinPro.jsp" name="userInfo" onsubmit="return checkValue()">
             <table>
                 <tr>
                     <td id="title">아이디</td>
@@ -49,7 +48,7 @@ td {
                 </tr>
                 <tr>
                     <td id="title">비밀번호 확인</td>
-                    <td><input type="password" name="password" maxlength="15"></td>
+                    <td><input type="password" name="passwordcheck" maxlength="15"></td>
                 </tr>
                 <tr>
                     <td id="title">이름</td>
