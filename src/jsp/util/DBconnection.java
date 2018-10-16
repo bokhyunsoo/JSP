@@ -1,4 +1,4 @@
-package test.model;
+package jsp.util;
 import java.sql.Connection;
 import java.sql.SQLException;
 

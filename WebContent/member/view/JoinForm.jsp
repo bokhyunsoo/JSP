@@ -23,7 +23,12 @@
 			alert("비밀번호를 동일하게 입력하세요.");
 			return false;
 		}
-	}	
+	}
+	
+	// 취소 버튼 클릭시 로그인 화면으로 이동
+	function goLoginForm() {
+		location.href="LoginForm.jsp";
+	}
 </script>
 </head>
 <body>
@@ -107,7 +112,7 @@
                     </td>
                 </tr>
             </table>
-            <br><br><input type="submit" value="가입"/> <input type="button" value="취소">
+            <br><br><input type="submit" value="가입"/> <input type="button" value="취소" onclick="goLoginForm()">
      </form>
      </div>
 </body>
