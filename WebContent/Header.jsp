@@ -33,6 +33,10 @@
 		{
 			location.href="member/pro/LogoutPro.jsp";
 		}
+		else if(value == "4") // 내정보 버튼 클릭시 회원정보 보여주는 화면으로 이동
+		{
+			location.href="MainForm.jsp?contentPage=member/view/UserInfoForm.jsp";
+		}
 	}
 </script>
 </head>
@@ -52,7 +56,7 @@
 				} else {
 			%>
 				<button id="logoutBtn" class="btn btn-primary" onclick="changeView(3)">로그아웃</button>
-				<button id="updateBtn" class="btn btn-primary">내정보</button>
+				<button id="updateBtn" class="btn btn-primary" onclick="changeView(4)">내정보</button>
 			<% } %>
 			<button id="memberViewBtn" class="btn btn-warning">회원보기</button>
 		</p>
