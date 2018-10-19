@@ -9,6 +9,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>회원가입 처리 JSP</title>
 <link href='<%=request.getContextPath() %>/css/join_style.css' rel='stylesheet' style='text/css' />
+<script>
+	// 확인 버튼 클릭시 첫화면으로 이동
+	function goFirstForm() {
+		location.href="MainForm.jsp";
+	}
+</script>
 </head>
 <body>
 	<%
@@ -83,7 +89,7 @@
 		</table>
 		
 		<br>
-		<input type="button" value="확인">
+		<input type="button" value="확인" onclick="goFirstForm()">
 	</div>
 </body>
 </html>

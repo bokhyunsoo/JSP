@@ -22,15 +22,15 @@
 		}
 	}
 	
-	// 회원가입 버튼 클릭시 회원가입 화면으로 이동
+	// 취소 버튼 클릭시 첫화면으로 이동
 	function goJoinForm() {
-		location.href="JoinForm.jsp";
+		location.href="MainForm.jsp";
 	}
 </script>
 </head>
 <body>
 	<div id="wrap">
-		<form name="loginInfo" method="post" action="../pro/LoginPro.jsp" onsubmit="return checkValue()">
+		<form name="loginInfo" method="post" action="member/pro/LoginPro.jsp" onsubmit="return checkValue()">
 			<img src="<%=request.getContextPath() %>/img/welcome.jpg">
 			<br><br>
 			
@@ -46,7 +46,7 @@
 			</table>
 			<br>
 			<input type="submit" value="로그인"/>
-			<input type="button" value="회원가입" onclick="goJoinForm()" />
+			<input type="button" value="취소" onclick="goJoinForm()" />
 		</form>
 		
 		<%

@@ -25,9 +25,9 @@
 		}
 	}
 	
-	// 취소 버튼 클릭시 로그인 화면으로 이동
+	// 취소 버튼 클릭시 첫화면으로 이동
 	function goLoginForm() {
-		location.href="LoginForm.jsp";
+		location.href="MainForm.jsp";
 	}
 </script>
 </head>
