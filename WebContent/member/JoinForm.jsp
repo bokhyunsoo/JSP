@@ -38,7 +38,7 @@
 	<b><font size="6" color="gray">회원가입</font></b>
 	<br><br><br>
 	
-	<form method="post" action="<%=request.getContextPath() %>/pro/JoinPro.jsp" name="userInfo" onsubmit="return checkValue()">
+	<form method="post" action="MemberJoinAction.do" name="userInfo" onsubmit="return checkValue()">
             <table>
                 <tr>
                     <td id="title">아이디</td>

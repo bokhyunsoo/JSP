@@ -29,9 +29,9 @@
 		if(val == "-1"){
 			location.href="MainForm.jsp";
 		} else if(val == "0"){
-			location.href="MainForm.jsp?contentPage=member/view/ModifyForm.jsp";
+			location.href="ModifyForm.do";
 		} else if(val == "1"){
-			location.href="MainForm.jsp?contentPage=member/view/DeleteForm.jsp";
+			location.href="DeleteForm.do";
 		}
 	}
 </script>

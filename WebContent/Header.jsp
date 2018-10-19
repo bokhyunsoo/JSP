@@ -23,19 +23,19 @@
 		}
 		else if(value == "1") // 로그인 버튼 클릭시 로그인 화면으로 이동
 		{
-			location.href="MainForm.jsp?contentPage=member/view/LoginForm.jsp";
+			location.href="MainForm.jsp?contentPage=member/LoginForm.jsp";
 		}
 		else if(value == "2") // 회원가입 버튼 클릭시 회원가입 화면으로 이동
 		{
-			location.href="MainForm.jsp?contentPage=member/view/JoinForm.jsp";
+			location.href="MainForm.jsp?contentPage=member/JoinForm.jsp";
 		}
 		else if(value == "3") // 로그아웃 버튼 클릭시 로그아웃 처리
 		{
-			location.href="member/pro/LogoutPro.jsp";
+			location.href="member/LogoutPro.jsp";
 		}
 		else if(value == "4") // 내정보 버튼 클릭시 회원정보 보여주는 화면으로 이동
 		{
-			location.href="MainForm.jsp?contentPage=member/view/UserInfoForm.jsp";
+			location.href="MainForm.jsp?contentPage=member/UserInfoForm.jsp";
 		}
 	}
 </script>

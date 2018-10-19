@@ -38,7 +38,7 @@
 	<b><font size="6" color="gray">내 정보</font></b>
 	<br><br><br>
 	
-	<form name="deleteform" method="post" action="MainForm.jsp?contentPage=member/pro/DeletePro.jsp" onsubmit="return checkValue()">
+	<form name="deleteform" method="post" action="MemberDeleteAction.do" onsubmit="return checkValue()">
 		<table>
 			<tr>
 				<td bgcolor="skyblue">비밀번호</td>

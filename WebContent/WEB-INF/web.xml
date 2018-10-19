@@ -10,6 +10,18 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   
+  <servlet>
+  	<description>Controller</description>
+  	<display-name>MemberController</display-name>
+  	<servlet-name>MemberController</servlet-name>
+  	<servlet-class>jsp.member.action.MemberController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>MemberController</servlet-name>
+  	<url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  
   <resource-ref>
   	<description>connection</description>
   	<res-ref-name>jdbc/OracleDB</res-ref-name>
